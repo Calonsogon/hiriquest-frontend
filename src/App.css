@@ -1,6 +1,34 @@
  .App {
   text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+.header-container {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  margin: 20px 0; 
+}
+
+.logo {
+  height: 200px; 
+  margin-right: 100px; 
+}
+
+.create-mission-button {
+  background-color: #437d21;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.create-mission-button:hover {
+  background-color: #59A52c;
+}
+
 
 .cards-container {
   display: flex;
@@ -19,7 +47,12 @@
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   z-index: 1000; 
-
+  width: 90%; 
+  max-width: 600px; 
+  box-sizing: border-box; 
+  max-height: 80vh;
+  overflow: auto; 
+}
 form input,
 form textarea,
 form button {
@@ -34,6 +67,7 @@ form button {
   border: none;
   padding: 10px;
   cursor: pointer;
+  border-radius: 5px;
 }
 
 form button:hover {
@@ -42,8 +76,8 @@ form button:hover {
 
 
 .modal {
-  width: 80%;
-  max-width: 600px;
+  width: 90%;
+  max-width: 80px;
   margin: 0 auto;
   background: white;
   padding: 20px;
@@ -64,4 +98,5 @@ form button:hover {
   justify-content: center;
   z-index: 999; 
 }
-}
+
+

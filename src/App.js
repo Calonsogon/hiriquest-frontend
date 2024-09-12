@@ -45,8 +45,10 @@ const App = () => {
 
   return (
     <div className="App">
+       <div className="header-container">
       <img src={logo} alt="Logo" className="logo" />
       <button onClick={openModal} className="create-mission-button">Crear Misión</button>
+      </div>
       <div className="cards-container">
         {misiones.map((mision) => (
           <CardMision 

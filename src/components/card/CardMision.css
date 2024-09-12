@@ -1,10 +1,14 @@
 .card-mision {
     width: 300px;
-    border: 1px solid #ccc;
+    border: 1px solid #437d21;
     border-radius: 10px;
     overflow: hidden;
     margin: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  .card-mision:hover {
+    transform: translateY(-5px);
   }
   
   .card-header {
@@ -44,18 +48,20 @@
     background-color: #f1f1f1;
   }
   
-  button {
+  button, .create-mission-button {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding: 5px 10px;
     border: none;
-    background-color: #007bff;
+    background-color: #437d21;
     color: white;
     border-radius: 5px;
     cursor: pointer;
   }
   
-  button:hover {
-    background-color: #0056b3;
+  button:hover, .create-mission-button:hover {
+    background-color: #59A52c;
   }
+  
   .edit-section {
     padding: 10px;
     border-top: 1px solid #ccc;
@@ -68,15 +74,12 @@
     margin: 10px 0;
   }
   
-  .edit-form button {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
+  .edit-form-buttons {
+    display: flex;
+    justify-content: space-between;
   }
   
-  .edit-form button:hover {
-    background-color: #0056b3;
+  .edit-form-buttons button {
+    width: 48%;
   }
   

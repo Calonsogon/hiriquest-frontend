@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import './CardMision.css'; 
 import EditMisionForm from '../EditMisionForm'; 
 
+
+
 const CardMision = ({ mision, onEdit, onDelete }) => {
   const [isEditing, setIsEditing] = useState(false);
 
@@ -34,8 +36,8 @@ const CardMision = ({ mision, onEdit, onDelete }) => {
         <p className="recompensa"><strong>Recompensa:</strong> {mision.recompensa} puntos</p>
       </div>
       <div className="card-footer">
-        <button onClick={toggleEdit}>{isEditing ? 'Cerrar' : 'Editar'}</button>
-        <button onClick={() => onDelete(mision.id)}>Eliminar</button>
+        <button className='create-mission-button' onClick={toggleEdit}>{isEditing ? 'Cerrar' : 'Editar'}</button>
+        <button className='create-mission-button' onClick={() => onDelete(mision.id)}>Eliminar</button>
       </div>
       {isEditing && (
         <div className="edit-section">
